@@ -7,7 +7,7 @@ algoritmo "Nome do Programa"
 var
 
 sexo:caractere
-alturaM, alturaP, alturaFilho, alturaFilha:inteiro
+alturaM, alturaP, alturaFilho, alturaFilha:real
 inicio
 
 escreva("Qual a altura da mãe? ")
@@ -16,8 +16,8 @@ escreva("Qual a altura do pai? ")
 leia(alturaP)
 escreval("Qual o gênero do seu filho? (Masculino, ou Feminino)")
 leia(sexo)
-alturaFilha := (alturaM + {alturaP + 13}) / 2
-alturaFilho := (alturaM + {alturaP - 13}) / 2
+alturaFilha := (alturaM + {alturaP - 13}) / 2
+alturaFilho := (alturaM + {alturaP + 12}) / 2
     se (sexo := "Masculino") entao
     escreva("A altura média do seu filho será ", alturaFilho,".")
     senao
